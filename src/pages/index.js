@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { useSelector, useDispatch } from 'react-redux'
-import {
-  increaseCounter,
-  decreaseCounter,
-} from '@store/modules/counter/actions'
+import { increaseCounter, decreaseCounter } from '@modules/counter/actions'
 
 import Layout from '@components/Layout'
 import SEO from '@components/seo'

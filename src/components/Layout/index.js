@@ -9,9 +9,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import { Container } from './styles'
+
 import Header from './_shared/Header'
 import Footer from './_shared/Footer'
-import './layout.css'
 
 export default function Layout({ children }) {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ export default function Layout({ children }) {
   `)
 
   return (
-    <>
+    <Container>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -38,7 +39,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
         <Footer />
       </div>
-    </>
+    </Container>
   )
 }
 

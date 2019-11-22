@@ -9,8 +9,10 @@
       "@assets/*": ["src/assets/*"],
       "@screens/*": ["src/screens/*"],
       "@store/*": ["src/store/*"],
+      "@modules/*": ["src/store/modules/*"],
       "@config/*": ["src/config/*"],
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
