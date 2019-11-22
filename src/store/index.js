@@ -8,7 +8,7 @@ import rootReducer from './modules/rootReducer'
 import rootSaga from './modules/rootSaga'
 
 const sagaMonitor =
-  process.env.NODE_ENV === 'development'
+  process.env.NODE_ENV === 'development' && typeof window !== 'undefined'
     ? console.tron.createSagaMonitor()
     : null
 
