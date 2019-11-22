@@ -14,7 +14,7 @@ This project is a Gatsby redux starter configured with Reactotron, Redux and Red
 
 1.  **Run `npm install or yarn`**
 
-2.  **Now run `gatsby develop`**
+2.  **Now run `npm start or yarn start`**
 
 ## 🧐 What's inside?
 
