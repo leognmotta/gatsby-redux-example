@@ -12,7 +12,8 @@
       "@modules/*": ["src/store/modules/*"],
       "@config/*": ["src/config/*"],
       "@services/*": ["src/services/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@helpers/*": ["src/helpers/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
