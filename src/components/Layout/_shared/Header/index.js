@@ -15,6 +15,8 @@ export default function Header({ siteTitle }) {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `1.45rem 1.0875rem`,
+          display: 'flex',
+          justifyContent: 'space-between',
         }}
       >
         <h1 style={{ margin: 0 }}>
@@ -28,6 +30,15 @@ export default function Header({ siteTitle }) {
             {siteTitle}
           </Link>
         </h1>
+
+        <Link
+          to="/app/login"
+          style={{
+            color: `white`,
+          }}
+        >
+          Login
+        </Link>
       </div>
     </header>
   )
