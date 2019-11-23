@@ -42,6 +42,7 @@ module.exports = {
           '@config': 'src/config',
           '@services': 'src/services',
           '@styles': 'src/styles',
+          '@helpers': 'src/helpers',
         },
         extensions: ['js'],
       },
