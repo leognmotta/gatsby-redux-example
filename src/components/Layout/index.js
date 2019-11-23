@@ -9,6 +9,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import Status from '@components/Status'
+
 import { Container } from './styles'
 
 import Header from './_shared/Header'
@@ -36,6 +38,7 @@ export default function Layout({ children }) {
           paddingTop: 0,
         }}
       >
+        <Status />
         <main>{children}</main>
         <Footer />
       </div>
