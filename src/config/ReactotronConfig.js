@@ -3,15 +3,17 @@ import { createClient } from 'reactotron-core-client'
 import { reactotronRedux } from 'reactotron-redux'
 import reactotronSaga from 'reactotron-redux-saga'
 
+import isBrowser from '@helpers/isBrowser'
+
 function getNavigatorProperty(name) {
   if (!name) return undefined
-  if (typeof window === 'undefined') return undefined
+  if (isBrowser()) return undefined
   if (!window.navigator && typeof window.navigator !== 'object')
     return undefined
   return window.navigator[name]
 }
 
-if (process.env.NODE_ENV === 'development' && typeof window !== 'undefined') {
+if (process.env.NODE_ENV === 'development' && isBrowser()) {
   const REACTOTRON_ASYNC_CLIENT_ID = '@REACTOTRON/clientId'
 
   const client = {
