@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import GlobalStyles from '@styles/GlobalStyles'
+import { ThemeProvider } from 'styled-components'
+import theme from '@styles/themes'
 
 import '@config/ReactotronConfig'
 
@@ -12,8 +14,10 @@ export default function AppWrapper({ element }) {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-        {element}
-        <GlobalStyles />
+        <ThemeProvider theme={theme[process.env.THEME || 'mainTheme']}>
+          {element}
+          <GlobalStyles />
+        </ThemeProvider>
       </PersistGate>
     </Provider>
   )

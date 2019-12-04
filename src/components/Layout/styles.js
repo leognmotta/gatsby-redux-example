@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  button {
-    margin: 0 10px 0 0;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
