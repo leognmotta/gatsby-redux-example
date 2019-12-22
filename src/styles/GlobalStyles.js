@@ -54,8 +54,4 @@ export default createGlobalStyle`
     background: #333745;
   }
   }
-
-  button {
-    cursor: pointer;
-  }
 `
